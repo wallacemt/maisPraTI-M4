@@ -1,7 +1,7 @@
 # 🎯Módulo 4 -Desenvolvendo Front-end com ReactJS
 
 Bem-vindo ao repositório do Módulo 4 do bootcamp Mais para TI! Este módulo é focado no desenvolvimento front-end utilizando ReactJS, uma das bibliotecas mais populares para construção de interfaces web. Aqui você encontrará os exercícios e projetos desenvolvidos durante esta etapa do curso.
-<img src='https://encurtador.com.br/iDN7e'>
+<img src='https://drive.google.com/uc?export=view&id=1Fooc9CztSNlrtpbNYy4osQXuJNvS0uXb' width="800">
 
 ## 🚀 Objetivos do Módulo
 
