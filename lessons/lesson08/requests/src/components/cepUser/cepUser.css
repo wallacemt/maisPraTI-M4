@@ -1,0 +1,37 @@
+.cep-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cep-user-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cep-input {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.cep-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cep-info {
+    margin-top: 20px;
+}
+
+.cep-info p {
+    margin-bottom: 10px;
+}
+
+.cep-info strong {
+    font-weight: bold;
+}
