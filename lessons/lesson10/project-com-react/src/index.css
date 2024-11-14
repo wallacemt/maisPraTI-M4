@@ -1,0 +1,17 @@
+:root {
+    --cor-fundo: #F6F1ED;
+    --branco: #fff;
+    --branco-2: #d7d1cb;
+    --preto: #000;
+    --verde-escuro: #1B1E18;
+    --verde-escuro-2: #121410;
+    --cinza-verde: #83908F;
+    --vermelho: #881212;
+}
+
+body {
+    background: var(--cor-fundo);
+    margin: -1px;
+    padding: 0;
+    overflow-x: hidden;
+}

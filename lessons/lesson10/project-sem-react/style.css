@@ -1,0 +1,894 @@
+:root {
+    --cor-fundo: #F6F1ED;
+    --branco: #fff;
+    --branco-2: #d7d1cb;
+    --preto: #000;
+    --verde-escuro: #1B1E18;
+    --verde-escuro-2: #121410;
+    --cinza-verde: #83908F;
+    --vermelho: #881212;
+}
+
+body {
+    background: var(--cor-fundo);
+    margin: 0px;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilos - Navegação */
+
+.navigation {
+    width: 100%;
+    min-width: 1090px;
+    z-index: 999;
+    top: 60px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation-itens {
+    padding: 20px;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.logo-autora {
+    margin-top: 46px;
+    margin-left: 85px;
+    position: relative;
+    width: 250px;
+    float: left;
+    padding: 20px;
+}
+
+.cruz {
+    width: 54px;
+    height: 54px;
+}
+
+.nome-navigation {
+    position: absolute;
+    left: 92px;
+    top: 33px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+    font-family: Karma;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.itens {
+    display: inline-flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.itens p, a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--preto);
+    text-decoration: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.itens p:hover, a:hover {
+    color: var(--branco);
+}
+
+.button-navigation {
+    padding: 15px;
+    background: var(--verde-escuro);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.button-navigation div.ComprarAgora, a#ComprarAgora {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -4px;
+}
+
+.button-navigation:hover {
+    background-color: var(--vermelho);
+    transition: 0.3s ease;
+}
+
+/* Estilos - Main */
+
+.main {
+    width: 100%;
+    height: 1030px;
+    position: relative;
+    top: 350px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    width: 100%;
+    height: 1030px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+    background-image: url("./assets/img/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.title {
+    min-width: 600px;
+    left: 110px;
+    top: 300px;
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    line-height: 77px;
+    word-wrap: break-word;
+    font-weight: 100;
+}
+
+.description {
+    width: 580px;
+    left: 110px;
+    top: 500px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.button-main {
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    left: 100px;
+    top: 900px;
+    background: var(--vermelho);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    white-space: nowrap;
+    color: var(--branco-2);
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.button-main:hover {
+    background-color: var(--branco-2);
+    color: var(--verde-escuro);
+    font-weight: 700;
+}
+
+.button-main-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 75px;
+    text-align: center;
+    margin-left: 75px;
+    transition: color 0.3s ease;
+}
+
+.mockup {
+    z-index: -1;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: 50%;
+    top: 220px;
+}
+
+/* Estilos - Stickers */
+
+.stickers {
+    position: absolute;
+    width: 100%;
+    max-width: 86%;
+    top: 1120px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sticker-grid {
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stickers-text{
+    max-width: 245px;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.sticker {
+    width: 256px;
+    margin-bottom: -40px; 
+    transition: 0.3s ease;
+}
+
+.sticker:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+/* Estilos - Opções de compra */
+
+.onde-comprar {
+    align-items: center;
+    justify-content: center;
+    top: 1800px;
+    max-width: 1300px;
+    width: 88%;
+    height: 840px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--verde-escuro);
+    border-radius: 18px;
+    min-width: 1225px;
+}
+
+.box-bg-texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 18px;
+    min-width: 1225px;
+    background-image: url("./assets/textura-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.onde-comprar p {
+    z-index: 3;
+    margin-top: 43px;
+    position: absolute;
+    text-align: center;
+    color: var(--branco);
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.onde-comprar-title {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.onde-comprar-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.img-ebook {
+    width: 90%;
+}
+
+#preco-01 {
+    margin-bottom: 10px;
+}
+
+#img-ebook-01 {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#img-ebook-02 {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+#img-ebook-03 {
+    width: 220px;
+    margin-top: 25px;
+    margin-bottom: 52px;
+}
+
+#img-ebook-04 {
+    width: 220px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.produto-container {
+    margin-top: 130px;
+    width: 260px;
+    height: 650px;
+    background: var(--branco-2);
+    text-align: center;
+    border-radius: 19px;
+    display: inline-block;
+    transition: 1s ease;
+}
+
+.produto-container:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.cruz-02 img {
+    margin-top: 30px;
+    width: 100%;
+    width: 41px;
+    height: 41px;
+}
+
+.produto-titulo {
+    z-index: 2;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 36px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.produto-valor {
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: -40px;
+    line-height: 70px;
+}
+
+#produto-valor-02 {
+    margin-top: -15px;
+    color: var(--verde-escuro);
+    font-size: 30px;
+}
+
+.produto-complemento {
+    z-index: 4;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#produto-complemento-02 {
+    margin-top: -15px;
+    color: var(--verde-escuro);
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.produto-botao {
+    color: var(--branco);
+    background: var(--vermelho);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-left: 32px;
+}
+
+.produto-botao p, a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+
+/* Estilos para seção de relatos */
+
+.relatos {
+    top: 2630px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relatos-text {
+    position: relative;
+    top: -95px;
+    display: inline-block;
+}
+
+.grid-relatos {
+    position: relative;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.relatos_texto {
+    width: 1004px;
+    left: 60px;
+    top: 8px;
+    position: absolute;
+    text-align: center;
+    color: #1B1E18;
+    font-size: 36px;
+    font-family: Karma;
+    font-weight: 700;
+    line-height: 43.45px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.relatos_cruz-01 {
+    left: 155px;
+    top: -55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.relatos_cruz-02 {
+    left: 910px;
+    top: -55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.vector {
+    width: 53px;
+    height: 53px;
+}
+
+.relatos-imagem {
+    border-radius: 15px;
+    width: 342px;
+    height: 519px;
+}
+
+/* Estilos - Onde Comprar */
+
+.links-ecommerce {
+    top: 3280px;
+    background: var(--verde-escuro);
+    border-radius: 18px;
+    max-width: 1300px;
+    width: 90%;
+    height: 501px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.links-ecommerce-textura {
+    position: absolute;
+    max-width: 1300px;
+    width: 100%;
+    height: 501px;
+    border-radius: 18px;
+    background-image: url("./assets/img/textura-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: difference;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.links-ecommerce-text {
+    position: relative;
+    max-width: 500px;
+    left: 700px;
+    margin-top: 80px;
+    color: var(--branco);
+    font-family: 'Karma', sans-serif;
+    word-wrap: break-word;
+}
+
+.links-ecommerce-title {
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 51.70px;
+}
+
+.links-ecommerce-subtitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.links-container {
+    position: relative;
+    margin-left: 684px;
+    margin-right: 40px;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.button_ecommerce {
+    background: var(--vermelho);
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 14px 24px;
+    overflow: hidden;
+    line-height: 60px;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
+.button_ecommerce-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    word-wrap: break-word;
+    bottom: 29px;
+}
+
+.ebook1 {
+    width: 400px;
+    position: absolute;
+    left: 160px;
+    top: -30px;
+    border-radius: 20px;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+}
+
+
+/* Estilos - Seção Fale Comigo */
+
+.link-direto {
+    top: 3900px;
+    max-width: 1200px;
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-direto-group {
+    width: 100%;
+    height: 100%;
+}
+
+.link-direto-description {
+    max-width: 680px;
+    position: absolute;
+    top: 36px;
+}
+
+.link-direto-description .highlight {
+    color: #121410;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link-direto-description span {
+    color: #121410;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.author {
+    width: 401px;
+    position: absolute;
+    left: 781px;
+    top: 460px;
+    text-align: center;
+    color: var(--verde-escuro);
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.author-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.link-direto-button {
+    width: 263px;
+    height: 52px;
+    position: absolute;
+    left: -15px;
+    top: 460px;
+    background: var(--vermelho);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-direto-button-text {
+    color: var(--branco);
+    font-size: 16px;
+    font-family: 'Karma', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.author-image {
+    width: 412px;
+    height: 412px;
+    position: absolute;
+    left: 776px;
+    top: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos - Seção das playlist */
+
+.spotify-playlist {
+    top: 4530px;
+    max-width: 100%;
+    width: 1100px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: var(--verde-escuro);
+    border-radius: 30px;
+}
+
+.playlist-texture {
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 30px;
+    margin-top: -481px;
+    background-image: url("./_assets/img/textura-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: difference;
+    opacity: 0.5;
+}
+
+.text-playlist {
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Older Dictator', sans-serif;
+    color: var(--branco);
+    font-size: 60px;
+    word-wrap: break-word;
+    font-weight: 100;
+}
+
+.playlist-grid {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+/* Estilos - Formulário */
+
+.form-container {
+    position: absolute;
+    z-index: 99;
+    top: 4850px;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    background: var(--verde-escuro);
+    color: var(--branco);
+}
+
+.form-bg {
+    width: 90%;
+    position: absolute;
+    top: 83px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Karma', sans-serif;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.form-container p {
+    text-align: center;
+    color: var(--branco);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#name input {
+    font-family: 'Karma', sans-serif;
+    font-size: 16px;
+    margin-right: 30px;
+    width: 250px;
+    height: 46px;
+    border-radius: 7px;
+    border: none;
+    padding-left: 10px;
+}
+
+#mensagem input {
+    font-family: 'Karma', sans-serif;
+    font-size: 16px;
+    margin-right: 30px;
+    width: 250px;
+    height: 46px;
+    border-radius: 7px;
+    border: none;
+    padding-left: 10px;
+}
+
+.button-form {
+    width: 263px;
+    height: 46px;
+    background: var(--vermelho);
+    color: var(--branco);
+    border-radius: 8px;
+    font-family: 'Karma', sans-serif;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Estilos - Rodapé */
+
+.footer {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 150px;
+    top: 5120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.footer-title {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.97px;
+}
+
+.footer-credit {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.social-icons {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    position: absolute;
+    max-width: 5%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-catarse {
+    width: 115px;
+    height: 117px;
+    position: absolute;
+    right: 70px;
+    top: 20px;
+}
